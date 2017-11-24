@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG playground</title>
+    <link rel="stylesheet" href="dist/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-grey-lighter font-sans">
+    <div class="container mx-auto
+                min-h-screen h-full
+                flex items-center justify-center flex-col
+                " id="app">
+                <svg class="invisible w-64 h-64 text-grey-darker" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="64" width="64" version="1.1" y="0px" x="0px" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 64 64">
+                    <g stroke="#444" stroke-miterlimit="10" stroke-width="2" class="nc-icon-wrapper" fill="none">
+                        <path d="m46 32a14 14 0 0 1 -14 14 14 14 0 0 1 -14 -14 14 14 0 0 1 14 -14 14 14 0 0 1 14 14z" stroke-linecap="square"/>
+                        <path d="m60 32a28 28 0 0 1 -28 28 28 28 0 0 1 -28 -28 28 28 0 0 1 28 -28 28 28 0 0 1 28 28z" stroke-linecap="square"/>
+                        <g>
+                            <path d="m26 19.347v-14.703"/>
+                            <path d="m38 4.644v14.703"/>
+                            <path d="m44.653 26h14.703"/>
+                            <path d="m59.356 38h-14.703"/>
+                            <path d="m38 44.653v14.703"/>
+                            <path d="m26 59.356v-14.703"/>
+                            <path d="m19.347 38h-14.703"/>
+                            <path d="m4.644 26h14.703"/>
+                        </g>
+                        <g stroke-linecap="square">
+                            <path data-color="color-2" d="m2 16c0-7.732 6.268-14 14-14"/>
+                            <path data-color="color-2" d="m48 2c7.732 0 14 6.268 14 14"/>
+                            <path data-color="color-2" d="m62 48c0 7.732-6.268 14-14 14"/>
+                            <path data-color="color-2" d="m16 62c-7.732 0-14-6.268-14-14"/>
+                        </g>
+                    </g>
+                </svg>
+
+        <button @click="activate" class="mt-4 py-2 px-4 shadow-md bg-pink hover:bg-pink-dark text-white rounded">Show me that icon</button>
+    </div>
+    <script src="dist/app.js"></script>
+</body>
+</html>
