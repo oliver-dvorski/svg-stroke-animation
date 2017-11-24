@@ -3,7 +3,13 @@ import Vue from 'vue'
 let app = new Vue({
     'el': '#app',
     data: {
-        paths: []
+        paths: [],
+        active: false
+    },
+    computed: {
+        buttonText() {
+            return this.active ? 'Hide' : 'Show'
+        }
     },
     methods: {
         activate() {
@@ -11,6 +17,20 @@ let app = new Vue({
             this.paths.forEach((item) => {
                 item.el.style.strokeDashoffset = 0
             })
+            this.active = true
+        },
+        deactivate() {
+            this.paths.forEach((item) => {
+                item.el.style.strokeDashoffset = 0 - item.length
+            })
+            this.active = false
+        },
+        toggle() {
+            if (this.active) {
+                this.deactivate()
+                return
+            }
+            this.activate()
         }
     },
     mounted() {
