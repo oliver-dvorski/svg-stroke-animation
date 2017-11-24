@@ -56,38 +56,6 @@ var colors = {
   'grey-lightest': '#fafcfc',
   'white': '#ffffff',
 
-  'red-darkest': '#420806',
-  'red-darker': '#6a1b19',
-  'red-dark': '#cc1f1a',
-  'red': '#e3342f',
-  'red-light': '#ef5753',
-  'red-lighter': '#f9acaa',
-  'red-lightest': '#fcebea',
-
-  'orange-darkest': '#542605',
-  'orange-darker': '#7f4012',
-  'orange-dark': '#de751f',
-  'orange': '#f6993f',
-  'orange-light': '#faad63',
-  'orange-lighter': '#fcd9b6',
-  'orange-lightest': '#fff5eb',
-
-  'yellow-darkest': '#453411',
-  'yellow-darker': '#684f1d',
-  'yellow-dark': '#f2d024',
-  'yellow': '#ffed4a',
-  'yellow-light': '#fff382',
-  'yellow-lighter': '#fff9c2',
-  'yellow-lightest': '#fcfbeb',
-
-  'green-darkest': '#032d19',
-  'green-darker': '#0b4228',
-  'green-dark': '#1f9d55',
-  'green': '#38c172',
-  'green-light': '#51d88a',
-  'green-lighter': '#a2f5bf',
-  'green-lightest': '#e3fcec',
-
   'teal-darkest': '#0d3331',
   'teal-darker': '#174e4b',
   'teal-dark': '#38a89d',
@@ -95,38 +63,6 @@ var colors = {
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
-
-  'blue-darkest': '#05233b',
-  'blue-darker': '#103d60',
-  'blue-dark': '#2779bd',
-  'blue': '#3490dc',
-  'blue-light': '#6cb2eb',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff',
-
-  'indigo-darkest': '#191e38',
-  'indigo-darker': '#2f365f',
-  'indigo-dark': '#5661b3',
-  'indigo': '#6574cd',
-  'indigo-light': '#7886d7',
-  'indigo-lighter': '#b2b7ff',
-  'indigo-lightest': '#e6e8ff',
-
-  'purple-darkest': '#1f133f',
-  'purple-darker': '#352465',
-  'purple-dark': '#794acf',
-  'purple': '#9561e2',
-  'purple-light': '#a779e9',
-  'purple-lighter': '#d6bbfc',
-  'purple-lightest': '#f3ebff',
-
-  'pink-darkest': '#45051e',
-  'pink-darker': '#72173a',
-  'pink-dark': '#eb5286',
-  'pink': '#f66d9b',
-  'pink-light': '#fa7ea8',
-  'pink-lighter': '#ffbbca',
-  'pink-lightest': '#ffebef',
 }
 
 module.exports = {
@@ -145,34 +81,6 @@ module.exports = {
   */
 
   colors: colors,
-
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Screens                      https://tailwindcss.com/docs/responsive-design
-  |-----------------------------------------------------------------------------
-  |
-  | Screens in Tailwind are translated to CSS media queries. They define the
-  | responsive breakpoints for your project. By default Tailwind takes a
-  | "mobile first" approach, where each screen size represents a minimum
-  | viewport width. Feel free to have as few or as many screens as you
-  | want, naming them in whatever way you'd prefer for your project.
-  |
-  | Tailwind also allows for more complex screen definitions, which can be
-  | useful in certain situations. Be sure to see the full responsive
-  | documentation for a complete list of options.
-  |
-  | Class name: .{screen}:{utility}
-  |
-  */
-
-  screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
-  },
-
 
   /*
   |-----------------------------------------------------------------------------
@@ -205,127 +113,8 @@ module.exports = {
       'Droid Sans',
       'Helvetica Neue',
       'sans-serif',
-    ],
-    'serif': [
-      'Constantia',
-      'Lucida Bright',
-      'Lucidabright',
-      'Lucida Serif',
-      'Lucida',
-      'DejaVu Serif',
-      'Bitstream Vera Serif',
-      'Liberation Serif',
-      'Georgia',
-      'serif',
-    ],
-    'mono': [
-      'Menlo',
-      'Monaco',
-      'Consolas',
-      'Liberation Mono',
-      'Courier New',
-      'monospace',
     ]
   },
-
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Text sizes                         https://tailwindcss.com/docs/text-sizing
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your text sizes. Name these in whatever way
-  | makes the most sense to you. We use size names by default, but
-  | you're welcome to use a numeric scale or even something else
-  | entirely.
-  |
-  | By default Tailwind uses the "rem" unit type for most measurements.
-  | This allows you to set a root font size which all other sizes are
-  | then based on. That said, you are free to use whatever units you
-  | prefer, be it rems, ems, pixels or other.
-  |
-  | Class name: .text-{size}
-  |
-  */
-
-  textSizes: {
-    'xs': '.75rem',     // 12px
-    'sm': '.875rem',    // 14px
-    'base': '1rem',     // 16px
-    'lg': '1.125rem',   // 18px
-    'xl': '1.25rem',    // 20px
-    '2xl': '1.5rem',    // 24px
-    '3xl': '1.875rem',  // 30px
-    '4xl': '2.25rem',   // 36px
-    '5xl': '3rem',      // 48px
-  },
-
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Font weights                       https://tailwindcss.com/docs/font-weight
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your font weights. We've provided a list of
-  | common font weight names with their respective numeric scale values
-  | to get you started. It's unlikely that your project will require
-  | all of these, so we recommend removing those you don't need.
-  |
-  | Class name: .font-{weight}
-  |
-  */
-
-  fontWeights: {
-    'hairline': 100,
-    'thin': 200,
-    'light': 300,
-    'normal': 400,
-    'medium': 500,
-    'semibold': 600,
-    'bold': 700,
-    'extrabold': 800,
-    'black': 900,
-  },
-
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Leading (line height)              https://tailwindcss.com/docs/line-height
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your line height values, or as we call
-  | them in Tailwind, leadings.
-  |
-  | Class name: .leading-{size}
-  |
-  */
-
-  leading: {
-    'none': 1,
-    'tight': 1.25,
-    'normal': 1.5,
-    'loose': 2,
-  },
-
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Tracking (letter spacing)       https://tailwindcss.com/docs/letter-spacing
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your letter spacing values, or as we call
-  | them in Tailwind, tracking.
-  |
-  | Class name: .tracking-{size}
-  |
-  */
-
-  tracking: {
-    'tight': '-0.05em',
-    'normal': '0',
-    'wide': '0.05em',
-  },
-
 
   /*
   |-----------------------------------------------------------------------------
@@ -357,29 +146,6 @@ module.exports = {
   */
 
   backgroundColors: colors,
-
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Border widths                     https://tailwindcss.com/docs/border-width
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your border widths. Take note that border
-  | widths require a special "default" value set as well. This is the
-  | width that will be used when you do not specify a border width.
-  |
-  | Class name: .border{-side?}{-width?}
-  |
-  */
-
-  borderWidths: {
-    default: '1px',
-    '0': '0',
-    '2': '2px',
-    '4': '4px',
-    '8': '8px',
-  },
-
 
   /*
   |-----------------------------------------------------------------------------
@@ -424,7 +190,6 @@ module.exports = {
     'lg': '.5rem',
     'full': '9999px',
   },
-
 
   /*
   |-----------------------------------------------------------------------------
@@ -709,53 +474,6 @@ module.exports = {
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
     'none': 'none',
   },
-
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Z-index                                https://tailwindcss.com/docs/z-index
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your z-index utility values. By default we
-  | provide a sensible numeric scale. You can, of course, modify these
-  | values as needed.
-  |
-  | Class name: .z-{index}
-  |
-  */
-
-  zIndex: {
-    'auto': 'auto',
-    '0': 0,
-    '10': 10,
-    '20': 20,
-    '30': 30,
-    '40': 40,
-    '50': 50,
-  },
-
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Opacity                                https://tailwindcss.com/docs/opacity
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your opacity utility values. By default we
-  | provide a sensible numeric scale. You can, of course, modify these
-  | values as needed.
-  |
-  | Class name: .opacity-{name}
-  |
-  */
-
-  opacity: {
-    '0': '0',
-    '25': '.25',
-    '50': '.5',
-    '75': '.75',
-    '100': '1',
-  },
-
 
   /*
   |-----------------------------------------------------------------------------
